@@ -1,0 +1,234 @@
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*box sizing will not add to the actual width of the box */
+}
+/* main/default styling */
+html body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+a {
+  color: #333;
+  text-decoration: none; /* this is the attribute that removes the underline*/
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+p {
+  margin: 10px 0;
+}
+/* utility classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto; /* use this anytime there is > 1 item of content*/
+  padding: 0 20px;
+}
+.text-primary {
+  color: orangered;
+}
+.lead {
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+}
+.btn:hover {
+  background: orangered;
+  color: #fff;
+}
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+.bg-primary {
+  background: orangered;
+  color: #fff;
+}
+.clr {
+  clear: both;
+}
+.large-heading {
+  font-size: 40px;
+}
+/* padding */
+.py-1 {
+  padding: 10px 0;
+}
+.py-2 {
+  padding: 20px 0;
+}
+.py-3 {
+  padding: 30px 0;
+}
+/* navbar */
+#nav-bar {
+  background: orangered;
+  color: #fff;
+  overflow: auto; /* so that the background shows no matter what*/
+}
+#nav-bar .logo {
+  float: left;
+  height: 200px;
+  margin: -70px auto;
+}
+#nav-bar a {
+  color: #fff;
+}
+#nav-bar ul {
+  list-style: none; /*this attribute removes the bullets*/
+  float: right;
+}
+#nav-bar ul li {
+  float: left;
+}
+#nav-bar ul li a {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}
+#nav-bar ul li a:hover,
+#nav-bar ul li a.current {
+  /* this is how you can create a "highlight" for the *current* page the EU is on*/
+  background: #444;
+  color: orangered;
+}
+/* showcase */
+#showcase {
+  background: url(../img/darker-house.jpeg) no-repeat center center/cover;
+  height: 600px;
+}
+#showcase .showcase-content {
+  color: white;
+  text-align: center;
+  padding: 170px 0 0 0;
+}
+#showcase h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+}
+#showcase .showcase-content p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+/* home-info */
+#home-info {
+  height: 400px;
+}
+#home-info .info-img {
+  background: url(../img/darkish-house.jpeg) no-repeat;
+  float: left;
+  min-height: 100%;
+  width: 50%;
+}
+#home-info .info-content {
+  float: right;
+  min-height: 100%;
+  text-align: center;
+  width: 50%;
+  padding: 50px 30px 0 30px;
+  overflow: hidden;
+}
+#home-info .info-content p {
+  padding: 0 0 30px 0;
+}
+
+/* features */
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+.box i {
+  margin: -10px 0 10px 0;
+}
+
+/* about-info */
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+#about-info .info-right img {
+  border-radius: 50%;
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  display: block;
+}
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+#testimonials {
+  background: url(../img/project-work.jpeg) no-repeat center center/cover;
+  height: 600px;
+  padding: 100px;
+}
+#testimonials .testimonial {
+  border-radius: 12%;
+  opacity: 0.9;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+#testimonials h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#testimonials .testimonial img {
+  float: left;
+  border-radius: 50%;
+  padding-right: 20px;
+  width: 100px;
+}
+/* contact form */
+#contact-form {
+  margin-bottom: 20px;
+}
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form .forms-group input,
+#contact-form .forms-group textarea {
+  border: solid 2px #333;
+  padding: 10px;
+  width: 100%;
+}
+#contact-form .forms-group textarea {
+  height: 200px;
+}
+/* border color inside input fields */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: orangered;
+}
+
+/* main-footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 25px 0 25px 0;
+}
